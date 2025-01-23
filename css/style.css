@@ -143,12 +143,16 @@
         opacity: 0;
     }
 
-    .navbar .nav-item:hover .dropdown-menu {
-        transform: rotateX(0deg);
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
+    .about-img{
+        margin-left: auto;
+        margin-right: auto;
     }
+}
+    @media (max-width: 375px) {
+      #title{
+        visibility: hidden;
+        font-size: 0px;
+      }
 }
 
 
@@ -345,10 +349,13 @@
 }
 
 .prev, .next {
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
     border-radius: 50%;
-    padding: 10px;
+    padding-top: 7px;
+    padding-left: 17px;
     font-size: 24px;
     color: #000; /* Arrow color */
     transition: background-color 0.3s;
